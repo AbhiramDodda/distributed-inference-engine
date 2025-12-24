@@ -92,16 +92,16 @@ distributed-inference-native/
         ┌─────────────┼─────────────┐
         │             │             │
         ▼             ▼             ▼
-    ┌────────┐   ┌────────┐   ┌────────┐
-    │Worker 1│   │Worker 2│   │Worker 3│
-    │  8001  │   │  8002  │   │  8003  │
-    │        │   │        │   │        │
-    │ Batch  │   │ Batch  │   │ Batch  │
-    │Process │   │Process │   │Process │
-    │        │   │        │   │        │
-    │Inference│   │Inference│  │Inference│
-    │Engine  │   │Engine  │   │Engine  │
-    └────────┘   └────────┘   └────────┘
+    ┌────────┐   ┌────────-┐  ┌────────-┐
+    │Worker 1│   │Worker 2 │  │Worker 3 │
+    │  8001  │   │  8002   |  │  8003   │
+    │        │   │         │  │         │
+    │ Batch  │   │ Batch   │  │ Batch   │
+    │Process │   │Process  │  │Process  │
+    │        │   │         │  │         │
+    │Inference│  │Inference│  │Inference│
+    │Engine  │   │Engine   │  │Engine   │
+    └────────┘   └────────-┘  └────────-┘
 ```
 
 ## Key Features
