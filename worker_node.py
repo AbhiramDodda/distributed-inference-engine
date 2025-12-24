@@ -120,7 +120,7 @@ def main():
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print(f"\n⏹Stopping {node_id}...")
+        print(f"\nStopping {node_id}...")
         worker.batch_processor.stop()
         server.shutdown()
 
