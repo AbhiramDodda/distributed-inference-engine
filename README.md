@@ -124,19 +124,6 @@ distributed-inference-native/
 - Easy to add more worker nodes
 - Linear throughput scaling
 
-## 📊 Expected Performance
-
-On a typical development machine:
-
-| Metric | Value | vs Single Node |
-|--------|-------|----------------|
-| Throughput | 800-1200 req/s | +180% |
-| Latency p50 | 25-35ms | -38% |
-| Latency p95 | 60-80ms | -37% |
-| Latency p99 | 90-120ms | -47% |
-| Load Variance | <5% | -60% |
-| Memory/Node | 900MB | -62% |
-
 ## Configuration
 
 ### Adjust Load Test
